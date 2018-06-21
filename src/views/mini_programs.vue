@@ -32,7 +32,7 @@
               </div> -->
               <!-- 默认显示 -->
                 <div class="classify_content_item_img">
-                    <img :src="BASE_IMG_URL + item.icon" alt="" srcset="">
+                    <img v-if="item.icon" :src="BASE_IMG_URL + item.icon" alt="" srcset="">
                 </div>
                 <div class="classify_content_item_text">
                     <div>
