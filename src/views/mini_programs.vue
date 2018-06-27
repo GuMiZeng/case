@@ -36,8 +36,8 @@
                 </div>
                 <div class="classify_content_item_text">
                     <div>
-                      <p><span class="name" v-text="item.name"></span></p>
-                      <p class="price"><span v-text="'￥'+item.price"></span></p>
+                      <!-- <p><span class="name" v-text="item.name"></span></p> -->
+                      <!-- <p class="price"><span v-text="'￥'+item.price"></span></p> -->
                     </div>
                 </div>
 

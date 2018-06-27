@@ -12,7 +12,7 @@ Vue.config.debug = true // 开启debug模式
 Vue.prototype.LOADING = false;
 
 // Vue.prototype.BASE_IMG_URL = 'http://192.168.1.107:8080/officialWeb/space/showImg/';
-Vue.prototype.BASE_IMG_URL = '//imdtcx.com/space/showImg/';
+Vue.prototype.BASE_IMG_URL = '/space/showImg/';
 
 /* eslint-disable no-new */
 let app = new Vue({

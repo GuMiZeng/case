@@ -241,7 +241,7 @@ export default {
 .home {
   .ad {
     height: 2.5rem;
-    background-color: #2199e1;
+    // background-color: #2199e1;
     .banner {
       .swiper-container {
         width: 100%;
@@ -277,8 +277,8 @@ export default {
       overflow: hidden;
       li {
         float: left;
-        width: 1.2rem;
-        margin: 0 0.14rem;
+        width: 1.4rem;
+        margin: 0 0.04rem;
         text-align: center;
         img {
           width: 0.8rem;
@@ -411,7 +411,7 @@ export default {
         position: absolute;
         bottom: 0.4rem;
         padding: 0.2rem;
-        line-height: 1.5;
+        line-height: 1.2;
         color: #666;
       }
     }
@@ -458,7 +458,7 @@ export default {
               bottom: 0.4rem;
               width: 6rem;
               padding: 0.2rem;
-              line-height: 1.5;
+              line-height: 1.2;
               color: #666;
               word-wrap: break-word;
             }

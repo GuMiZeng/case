@@ -25,7 +25,7 @@
     <div class="group" :style="{backgroundImage:'url('+require('./img/agent_case/bg_pic2.png')+')'}">
       <div class="group_content">
         <h1>代理互动群</h1>
-        <p>开源小程序的代理都在这里哦，大家可以
+        <p>即时小程序的代理都在这里哦，大家可以
           互动，交流心得，并且可以共同商讨开发
           客户，也可以资源互通，互帮互助，完成
           共赢！内部技术的小伙伴也在群内，有问

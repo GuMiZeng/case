@@ -11,10 +11,10 @@
             <h1>137-1806-1705</h1>
         </div>
         <div class="banner_btns">
-            <a target="_blank" href="mqqwpa://im/chat?chat_type=wpa&uin=975321148&version=1&src_type=web&web_src=oicqzone.com">
+            <!-- <a target="_blank" href="mqqwpa://im/chat?chat_type=wpa&uin=975321148&version=1&src_type=web&web_src=oicqzone.com"> -->
             <!-- <a target="_blank" href="http://sighttp.qq.com/msgrd?v=1&uin=975321148"> -->
-              <div class="pointer btn">在线咨询</div>
-            </a>
+              <!-- <div class="pointer btn">在线咨询</div> -->
+            <!-- </a> -->
             <div class="pointer btn" @click="rollApply()">立刻申请</div>              
         </div>
       </div>
@@ -545,6 +545,7 @@ export default {
   padding: 0 0.3rem;
   color: #333;
   .good_at_top {
+    margin: .2rem 0;
     text-align: center;
     font-size: 0.3rem;
     font-weight: 500;

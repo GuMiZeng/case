@@ -16,13 +16,12 @@
             </div>            
           </div>
       </div>
-      <a href="mqqwpa://im/chat?chat_type=wpa&uin=975321148&version=1&src_type=web&web_src=oicqzone.com">
-      <!-- <a target="_blank" href="http://sighttp.qq.com/msgrd?v=1&uin=975321148"> -->
+      <!-- <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=975321148&site=qq&menu=yes">
        <div class="call_way">
           <img :src="require('./img/QQ.png')" alt="" srcset="">
           <p>在线咨询</p>
       </div>
-      </a>
+      </a> -->
       <div class="call_way" @click="$router.push({path: '/agent_cooperation'})">
         <img :src="require('./img/ic.png')" alt="" srcset="">
         <p>申请代理</p>

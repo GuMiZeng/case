@@ -6,9 +6,9 @@
         <img class="logo_text" :src="require('./img/pic_name.png')"/>
       </div>
       <div class="user clear">
-        <a target="_blank" href="https://admin.yzsaas.cn/WeixinManager/index.jsp">
+        <!-- <a target="_blank" href="https://admin.yzsaas.cn/WeixinManager/index.jsp">
           <div class="user_login">登录</div>
-        </a>
+        </a> -->
         <!-- <img @click="d_menu = !d_menu" class="user_icon" :src="require('./img/ic_hanburger.png')" alt="" srcset=""> -->
         <!-- <transition name="fade">
           <ul class="user_menu" v-if="d_menu">
@@ -23,12 +23,6 @@
           </ul>
         </transition> -->
 			</div>
-      <!-- <div class="Btns">
-        <a target="_blank" href="https://admin.yzsaas.cn/WeixinManager/index.jsp">
-          <div class="btn btn_default">登录</div>
-        </a>
-        <div class="btn" @click="$router.push({path:'/agent_cooperation'})">申请代理</div>
-      </div> -->
     </div>
   </div>
 </template>
