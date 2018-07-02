@@ -80,7 +80,7 @@
     </div>
     <div class="merit" :style="{backgroundImage:'url('+require('./img/agent_cooperation/bg_pic.png')+')'}">
       <div class="merit_mask"></div>
-        <h1 class="merit_top">招商代理 六大优势</h1>
+        <h1 class="merit_top">代理五大优势</h1>
         <div class="merit_content" v-for="(item, key) of meritList" :key="key">
             <div class="merit_img">
                 <img v-bind:src="item.img" alt="" srcset="">
@@ -336,35 +336,34 @@ export default {
       ],
       meritList: [
         {
-          img: require("./img/agent_cooperation/风.png"),
-          text1: "小程序风口",
-          text2: "不容错过"
+          img: require("./img/agent_cooperation//pic_yuan.png"),
+          text1: "源代码支持",
         },
         {
-          img: require("./img/agent_cooperation/低.png"),
-          text1: "价格全网最低",
-          text2: "先到先得"
+          img: require("./img/agent_cooperation/pic_du.png"),
+          text1: "区域独家保护",
+          // text2: "先到先得"
         },
         {
-          img: require("./img/agent_cooperation/刚.png"),
-          text1: "微小企业刚需",
+          img: require("./img/agent_cooperation/pic_hui.png"),
+          text1: "价格优惠",
           text2: ""
         },
         {
-          img: require("./img/agent_cooperation/广.png"),
-          text1: "低门槛",
-          text2: "易推广"
+          img: require("./img/agent_cooperation/pic_pei.png"),
+          text1: "专业运营解",
+          text2: "决方案"
         },
         {
-          img: require("./img/agent_cooperation/锁.png"),
-          text1: "一次锁定客户",
-          text2: "多次收益"
+          img: require("./img/agent_cooperation/pic_xu.png"),
+          text1: "后续代",
+          text2: "运营分成"
         },
-        {
-          img: require("./img/agent_cooperation/核.png"),
-          text1: "上市公司",
-          text2: "核心项目"
-        }
+        // {
+        //   img: require("./img/agent_cooperation/核.png"),
+        //   text1: "上市公司",
+        //   text2: "核心项目"
+        // }
       ],
       coverList: [
         { img: require("./img/agent_cooperation/饮食.png"), text: "饮食服务" },
@@ -644,7 +643,12 @@ export default {
     width: 1.56rem;
     font-size: 0.26rem;
     margin: 0.3rem 0.3rem;
+    img{
+      width: 1.05rem;
+      height: 1.05rem;
+    }
     .merit_text {
+      margin: .2rem 0 0;
       line-height: 1.5;
     }
   }
@@ -685,7 +689,7 @@ export default {
   .cover_content {
     display: inline-block;
     vertical-align: top;
-    width: 0.96rem;
+    width: 1rem;
     font-size: 0.24rem;
     margin: 0.3rem 0.2rem;
     p {

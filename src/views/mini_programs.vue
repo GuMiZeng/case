@@ -140,8 +140,9 @@ export default {
     getData() {
       apiMini_programs.query.data = {
         type: this.d_type,
-        pageIndex: this.d_current,
-        pageSize: this.d_size
+        // 案例小程序全部显示
+        // pageIndex: this.d_current,
+        // pageSize: this.d_size
       };
       apiMini_programs.query.post().then(_response => {
         if (_response.data.code == 200) {
