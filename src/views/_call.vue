@@ -68,8 +68,8 @@ export default {
       position: absolute;
       overflow: hidden;
       width: 0;
-      top: 0px;
-      left: 0rem;
+      top: 0;
+      left: 0;
       height: 1.5rem;
       background-size: cover;
       transition: all 1s;
