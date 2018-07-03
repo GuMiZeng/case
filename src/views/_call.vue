@@ -69,10 +69,9 @@ export default {
       overflow: hidden;
       width: 0;
       top: 0px;
-      left: -.1rem;
+      left: 0rem;
       height: 1.5rem;
-      // background: url(require("./img/call_bg.png")) no-repeat;
-      // background: url("./img/call_bg.png");
+      background-size: cover;
       transition: all 1s;
       -moz-transition: all 1s; /* Firefox 4 */
       -webkit-transition: all 1s; /* Safari and Chrome */
