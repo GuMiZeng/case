@@ -41,9 +41,9 @@
         <div class="recruit_content_text">
           <p>全国范围内即时小程序代理商火热招募中。即刻代理，送50套完整小程序（各行业任你选择）！</p>
           <div class="recruit_btns">
-            <a target="_blank" href="https://admin.yzsaas.cn/WeixinManager/index.jsp">
+            <!-- <a target="_blank" href="https://admin.yzsaas.cn/WeixinManager/index.jsp">
               <div class="btn btn_default">代理登录</div>
-            </a>
+            </a> -->
             <div class="btn" @click="$router.push({path:'/agent_cooperation'})">申请代理</div>        
           </div>
         </div>
@@ -104,6 +104,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.agent_case{
+    padding: 0 0 .4rem 0;
+}
 .banner {
   height: 2.5rem;
   img {
@@ -200,7 +203,7 @@ export default {
       line-height: 1.5;
     }
     .group_btn {
-      margin: 0.3rem 0 0 2rem;
+      margin: -.1rem 0 0 2rem;
       width: 2.6rem;
       height: 0.64rem;
       line-height: 0.64rem;

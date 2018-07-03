@@ -59,6 +59,7 @@ export default {
 
 <style lang="scss" scoped>
 .about_us {
+  padding: 0 0 .3rem 0;
   color: #333;
   .ad {
     height: 2.5rem;
