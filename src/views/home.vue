@@ -61,9 +61,9 @@
     </div>
             </div>
           </div>
-          <div class="agent_swiper_pagination">
+          <!-- <div class="agent_swiper_pagination"> -->
             <div class="swiper-pagination swiper-pagination-white"></div>
-          </div>
+          <!-- </div> -->
       </div>
   </div>
   </div>
@@ -71,13 +71,13 @@
 
 <script>
 /* eslint-disable */
-import call from './_call'
+import call from "./_call";
 import { toRoll } from "../libs/function.js";
 import apiHome from "../api/home.js";
 /* eslint-disable */
 export default {
-  components:{
-    call,
+  components: {
+    call
   },
   data() {
     return {
@@ -239,7 +239,7 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  padding: 0 0 .5rem 0;
+  padding: 0 0 0.5rem 0;
   .ad {
     height: 2.5rem;
     .banner {
@@ -359,7 +359,7 @@ export default {
       width: 2rem;
       // height: 2.1rem;
       margin: 0.16rem 0.24rem;
-      padding: .1rem;
+      padding: 0.1rem;
       background-color: #fff;
       box-shadow: 0 0 8px #ccc;
       img {
@@ -416,73 +416,7 @@ export default {
       }
     }
   }
-
-  // .agent_talk {
-  //   .swiper-container {
-  //     width: 100%;
-  //     .swiper-wrapper {
-  //       width: 100%;
-  //       height: 100%;
-  //     }
-  //     .swiper-slide {
-  //       width: 100%;
-  //       height: 100%;
-  //       .agent {
-  //         padding: 0.5rem 0 0 0;
-  //         .agent_content {
-  //           position: relative;
-  //           left: 50%;
-  //           margin-left: -3.3rem;
-  //           width: 6.6rem;
-  //           height: 7rem;
-  //           background-color: #f1f1f1;
-  //           box-shadow: 0 0 8px rgba(0, 0, 1, 0.15);
-  //           img {
-  //             position: absolute;
-  //             top: -0.2rem;
-  //             left: -0.2rem;
-  //             width: 5rem;
-  //             height: 3.4rem;
-  //             box-shadow: 0 0 8px rgba(0, 0, 1, 0.15);
-  //           }
-  //           h1 {
-  //             position: absolute;
-  //             top: 0.5rem;
-  //             right: 0.7rem;
-  //             width: 0.3rem;
-  //             font-size: 0.28rem;
-  //             color: #666;
-  //           }
-  //           p {
-  //             position: absolute;
-  //             bottom: 0.4rem;
-  //             width: 6rem;
-  //             padding: 0.2rem;
-  //             line-height: 1.2;
-  //             color: #666;
-  //             word-wrap: break-word;
-  //           }
-  //         }
-  //       }
-  //     }
-  //     .agent_swiper_pagination {
-  //       position: absolute;
-  //       z-index: 7;
-  //       bottom: 0.45rem;
-  //       right: 0.6rem;
-  //       width: 1.56rem;
-  //       height: 0.15rem;
-  //       .swiper-pagination-bullet {
-  //         width: 0.12rem;
-  //         height: 0.12rem;
-  //         margin: 0 .42rem;
-  //         display: inline-block;
-  //         background-color: #fff;
-  //       }
-  //     }
-  //   }
-  // }
-    .agent_talk {
+  .agent_talk {
     .swiper-container {
       width: 100%;
       .swiper-wrapper {
@@ -504,8 +438,8 @@ export default {
             box-shadow: 0 0 8px rgba(0, 0, 1, 0.15);
             img {
               position: absolute;
-              top: -0.2rem;
-              left: -0.2rem;
+              top: 0;
+              left: 0;
               width: 5rem;
               height: 5rem;
               box-shadow: 0 0 8px rgba(0, 0, 1, 0.15);
@@ -523,8 +457,9 @@ export default {
               bottom: 0;
               width: 6rem;
               height: 3.6rem;
-              padding: 0.4rem .2rem;
+              padding: 0.4rem 0.2rem;
               line-height: 1.2;
+              font-size: .32rem;
               color: #666;
               word-wrap: break-word;
             }
@@ -541,7 +476,7 @@ export default {
         .swiper-pagination-bullet {
           width: 0.12rem;
           height: 0.12rem;
-          margin: 0 .2rem;
+          margin: 0 0.2rem;
           display: inline-block;
           background-color: #fff;
         }

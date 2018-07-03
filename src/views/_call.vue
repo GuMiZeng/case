@@ -78,8 +78,11 @@ export default {
       -webkit-transition: all 1s; /* Safari and Chrome */
       -o-transition: all 1s; /* Opera */
       .phone_number {
-        margin: .3rem auto;
+        margin: .25rem auto;
         width: 3.7rem;
+        img{
+          width: .3rem;
+        }
       }
       h1 {
         font-size: .3rem;
