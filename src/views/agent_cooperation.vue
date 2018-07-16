@@ -122,20 +122,20 @@
                   </FormItem>
                   <FormItem label="手机"><br>
                     <Row>
-                      <Col span="10">
+                      <!-- <Col span="10"> -->
                       <FormItem prop="mobile">
                         <Input v-model="apply_form.mobile" placeholder="请输入您的手机号码" maxlength="11" ></Input>
                       </FormItem>
-                      </Col>
-                      <Col span="7" offset="1">
-                      <FormItem prop="smsCode">
-                        <Input v-model="apply_form.smsCode" placeholder="请输入验证码" maxlength="4"></Input>
-                      </FormItem>
+                      <!-- </Col> -->
+                      <!-- <Col span="7" offset="1">
+                        <FormItem prop="smsCode">
+                          <Input v-model="apply_form.smsCode" placeholder="请输入验证码" maxlength="4"></Input>
+                        </FormItem>
                       </Col>
                       <Col span="5"  offset="1">
                         <div class="send_btn form_btn" v-if="d_send" v-text="d_count + '秒后重试..'">发送中...</div>   
                         <div class="send_btn form_btn" v-else @click="sendMessage()">发送验证码</div>                         
-                      </Col>
+                      </Col> -->
                     </Row>
                   </FormItem>
                   <FormItem prop="corporation" label="公司">
@@ -202,7 +202,7 @@ export default {
       apply_form: {
         manager: "", //	String	不是	负责人
         mobile: "", //	String	是	手机号码
-        smsCode: "", //	String	是	短信验证码
+        // smsCode: "", //	String	是	短信验证码
         corporation: "", //	String	不是	公司名称
         province: "", //	String	不是	省份
         city: "", //	String	不是	城市
@@ -242,23 +242,23 @@ export default {
             }
           }
         ],
-        smsCode: [
-          {
-            trigger: "change",
-            required: true,
-            validator: (rule, value, callback) => {
-              // 禁止空
-              if (!value) {
-                return callback(new Error("验证码不能为空"));
-              }
-              //  // 检查格式
-              // if (!/^[0-9]\d{4}$/.test(value)) {
-              //   return callback(new Error("输入数字验证码"));
-              // }
-              return callback();
-            }
-          }
-        ],
+        // smsCode: [
+        //   {
+        //     trigger: "change",
+        //     required: true,
+        //     validator: (rule, value, callback) => {
+        //       // 禁止空
+        //       if (!value) {
+        //         return callback(new Error("验证码不能为空"));
+        //       }
+        //       //  // 检查格式
+        //       // if (!/^[0-9]\d{4}$/.test(value)) {
+        //       //   return callback(new Error("输入数字验证码"));
+        //       // }
+        //       return callback();
+        //     }
+        //   }
+        // ],
         corporation: [
           {
             trigger: "change",
@@ -385,38 +385,38 @@ export default {
     };
   },
   methods: {
-    count() {
-      this.d_send = true;
-      let _this = this;
-      let interval = setInterval(function() {
-        _this.d_count--;
-        if (_this.d_count < 0) {
-          _this.d_send = false;
-          clearInterval(interval);
-        }
-      }, 1000);
-    },
-    sendMessage() {
-      if (!this.apply_form.mobile) {
-        this.$Message.warning("手机号码不能为空");
-      } else {
-        this.count(); // 计时函数
-        apiAgent.sendMessage.data = {
-          mobile: this.apply_form.mobile
-        };
-        apiAgent.sendMessage.post().then(_response => {
-          if (_response.data.code == 200) {
-            this.$Message.success("发送成功！");
-          } else if (_response.data.code == 101) {
-            this.$Message.error("手机号已注册！");
-          } else {
-            this.d_count = 0; //停止计时器
-            this.d_send = false; // 显示发送按钮
-            this.$Message.warning(_response.data.message);
-          }
-        });
-      }
-    },
+    // count() {
+    //   this.d_send = true;
+    //   let _this = this;
+    //   let interval = setInterval(function() {
+    //     _this.d_count--;
+    //     if (_this.d_count < 0) {
+    //       _this.d_send = false;
+    //       clearInterval(interval);
+    //     }
+    //   }, 1000);
+    // },
+    // sendMessage() {
+    //   if (!this.apply_form.mobile) {
+    //     this.$Message.warning("手机号码不能为空");
+    //   } else {
+    //     this.count(); // 计时函数
+    //     apiAgent.sendMessage.data = {
+    //       mobile: this.apply_form.mobile
+    //     };
+    //     apiAgent.sendMessage.post().then(_response => {
+    //       if (_response.data.code == 200) {
+    //         this.$Message.success("发送成功！");
+    //       } else if (_response.data.code == 101) {
+    //         this.$Message.error("手机号已注册！");
+    //       } else {
+    //         this.d_count = 0; //停止计时器
+    //         this.d_send = false; // 显示发送按钮
+    //         this.$Message.warning(_response.data.message);
+    //       }
+    //     });
+    //   }
+    // },
     rollApply() {
       let apply = this.$refs.applyForm;
       toRoll(apply);

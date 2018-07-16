@@ -10,14 +10,14 @@ module.exports = {
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
         proxyTable: {
-            // "/officialWeb": {
-            //     target: 'http://192.168.1.107:8080/officialWeb/',
-            //     changeOrigin: true,
-            //     // secure: false,
-            //     pathRewrite: {
-            //         '^/officialWeb': ''
-            //     }
-            // }
+            "/officialWeb": {
+                target: 'http://192.168.1.107:8080/officialWeb/',
+                changeOrigin: true,
+                // secure: false,
+                pathRewrite: {
+                    '^/officialWeb': ''
+                }
+            }
         },
 
         // Various Dev Server settings
